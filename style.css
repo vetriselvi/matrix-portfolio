@@ -27,11 +27,11 @@ body, html {
   text-decoration: none;
 }
 .hero-text {
-  background-color: rgba(0, 0, 0, 0.5); /* subtle dark background */
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 30px;
   border-radius: 10px;
   display: inline-block;
-  color: #00ff00; /* matrix green */
+  color: #00ff00;
   font-family: 'Courier New', monospace;
   font-size: 2.2rem;
   text-shadow:
@@ -39,6 +39,18 @@ body, html {
     0 0 10px #00ff00,
     0 0 15px #00ff00;
   animation: glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  }
+  50% {
+    text-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00;
+  }
+  100% {
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+  }
 }
 
 @keyframes glowPulse {
